@@ -1,4 +1,4 @@
-package workshop02.model;
+package workshop03.model;
 
 import java.util.List;
 import javax.persistence.Column;
@@ -27,7 +27,7 @@ public class DiscountCode {
     public Code getDicountCode() {
         return discountCode;
     }
-    public void setDicountCode(Code dicountCode) {
+    public void setDicountCode(Code discountCode) {
         this.discountCode = discountCode;
     }
 
@@ -43,5 +43,11 @@ public class DiscountCode {
     }
     public void setCustomers(List<Customer> customers) {
         this.customers = customers;
+    }
+
+    //ALT+INS -> toString -> choose 
+    @Override
+    public String toString() {
+        return "DiscountCode{" + "discountCode=" + discountCode + ", rate=" + rate + ", customers=" + customers + '}';
     }
 }

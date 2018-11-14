@@ -1,4 +1,4 @@
-package workshop02.web;
+package workshop03.web;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.ws.rs.core.MediaType;
-import workshop02.model.PurchaseOrder;
+import workshop03.model.PurchaseOrder;
 
 @WebServlet (urlPatterns = "/purchaseOrder")
 public class PurchaseOrderServlet extends HttpServlet{

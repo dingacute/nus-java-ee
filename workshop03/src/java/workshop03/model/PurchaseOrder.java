@@ -1,4 +1,4 @@
-package workshop02.model;
+package workshop03.model;
 
 import java.util.Date;
 import javax.json.Json;
@@ -29,7 +29,8 @@ import javax.persistence.Transient;
     ),
     @NamedQuery(
         name = "ObjectArray.countPurchaseOrderByCustomers",       
-        query = "select c.customerId, COUNT(po) from PurchaseOrder po join po.customer c group by c.customerId"
+        query = "select c.customerId, COUNT(po) from PurchaseOrder po "
+            + "join po.customer c group by c.customerId"
     )
 })
 public class PurchaseOrder {
