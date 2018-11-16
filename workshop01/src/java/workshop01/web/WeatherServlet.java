@@ -2,7 +2,6 @@ package workshop01.web;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import javafx.scene.text.Text;
 import javax.json.JsonArray;
 import javax.json.JsonObject;
 import javax.servlet.ServletException;
@@ -16,6 +15,8 @@ import javax.ws.rs.client.Invocation;
 import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
 
+// This program is to call an external service web address to search and display
+// the weather of the city which you input from the web page
 @WebServlet(urlPatterns = { "/weather" })
 public class WeatherServlet extends HttpServlet{
 
@@ -37,7 +38,8 @@ public class WeatherServlet extends HttpServlet{
     }
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) 
+            throws ServletException, IOException {
         //Form field name
         String cityName = req.getParameter("cityName");
         
@@ -88,7 +90,8 @@ public class WeatherServlet extends HttpServlet{
                 String description = wd.getString("description");
                 String icon = wd.getString("icon");//an image for this weather
                 pw.print("<div>");
-                //pw.printf("%s &dash; %s", main, description);//inside the html, type &dash instead of real dash '-'
+                //inside the html, type &dash instead of real dash '-'
+                //pw.printf("%s &dash; %s", main, description);
                 pw.print(main + " &dash; " + description);
                 pw.printf("<img src=\"http://openweathermap.org/img/w/%s.png\">", icon);
                 pw.print("</div>");

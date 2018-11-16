@@ -1,6 +1,5 @@
 package workshop03.business;
 
-import java.util.Dictionary;
 import java.util.Optional;
 import javax.ejb.Stateless;
 import javax.ejb.TransactionAttribute;

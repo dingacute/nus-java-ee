@@ -17,6 +17,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.ws.rs.core.MediaType;
 import workshop02.model.PurchaseOrder;
 
+//This program is to implement searching purchase order by customer id by NamedQuery
 @WebServlet (urlPatterns = "/purchaseOrder")
 public class PurchaseOrderServlet extends HttpServlet{
     

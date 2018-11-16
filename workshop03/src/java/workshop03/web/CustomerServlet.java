@@ -2,7 +2,6 @@ package workshop03.web;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.Dictionary;
 import java.util.Optional;
 import javax.ejb.EJB;
 import javax.servlet.ServletException;

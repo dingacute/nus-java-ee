@@ -12,6 +12,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+// This program is to count all the purchase orders of the specific customer 
+// by using the NamedQuery defined in the PurchaseOrder.java
 @WebServlet(urlPatterns = "/purchaseOrder/count")
 public class CountPurchaseOrderServlet extends HttpServlet {
     

@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.sql.DataSource;
 import javax.ws.rs.core.MediaType;
 
+//This program is to implement searching by customer id by PreparedStatement
 @WebServlet(urlPatterns = { "/customer-sql" })
 public class CustomerSQLServlet extends HttpServlet{
 
